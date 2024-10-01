@@ -12,4 +12,11 @@
   .empower-card {
     @apply max-w-[251px] bg-[#2D3142] border border-[#2D3142] hover:border-primary_color px-3 py-6 rounded-md text-white cursor-pointer hover:shadow-lg hover:scale-105 transition-all
   }
+  /* crative section  */
+  .cards{
+    @apply mt-[6rem] grid place-content-center gap-5 md:grid-cols-2 lg:grid-cols-4
+  }
+  .card{
+    @apply px-10 cursor-pointer border border-white hover:border-primary_color hover:shadow-xl bg-white py-5 rounded-md grid place-content-center
+  }
 }
