@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-3 py-1 rounded-md md:px-4 md:py-3  hover:scale-[1.01] transition duration-300
+  }
+  .nav-list-item {
+    @apply py-2 hover:bg-gray-200 text-[16px] cursor-pointer md:px-3 transition-all hover:font-bold 
+  }
+  .empower-card {
+    @apply max-w-[251px] bg-[#2D3142] border border-[#2D3142] hover:border-primary_color px-3 py-6 rounded-md text-white cursor-pointer hover:shadow-lg hover:scale-105 transition-all
+  }
+}

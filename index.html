@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awsome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper js css style link  -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <title>Creative</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <nav class="fixed top-0 left-0 bg-[#FFFFFF] w-full py-2 z-10">
+        <div class="container flex justify-between items-center">
+          <div>
+            <img class="w-24 md:w-auto" src="./images/logo.png" alt="" />
+          </div>
+          <ul
+            class="absolute -translate-x-[1000px] h-[100vh] transition top-0 bg-[#ffffff] left-0 w-[280px] text-center space-y-[1rem] md:flex items-center md:gap-5 md:space-y-0 md:-translate-x-0 md:static md:bg-transparent md:h-auto md:w-auto"
+            id="hamMenu"
+          >
+            <li class="nav-list-item">Home</li>
+            <li class="nav-list-item text-primary_color">About Us</li>
+            <li class="nav-list-item">Up Skills</li>
+            <li class="nav-list-item">Contact Us</li>
+            <div class="absolute md:hidden text-2xl z-10 top-0 right-2 p-2">
+              <i class="fas fa-xmark cursor-pointer" id="hideHamMenu"></i>
+            </div>
+          </ul>
+          <div class="flex items-center justify-center gap-2">
+            <button class="btn bg-primary_color text-white">
+              Register Interest
+            </button>
+            <div class="text-2xl md:hidden">
+              <i class="fa-solid fa-bars cursor-pointer" id="hamBtn"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero aria start here  -->
+      <div
+        class="bg-[url(./images/hero.png)] bg-center bg-cover bg-no-repeat mt-[70px] py-5 md:py-10"
+      >
+        <div class="container">
+          <h5 class="text-center text-[18px] font-bold text-white">
+            Discover <span class="text-primary_color">-</span> Interact
+            <span class="text-primary_color">-</span> Engage
+          </h5>
+          <h1
+            class="text-center font-bold text-white text-[35px] md:text-[40px] lg:text-[56px]"
+          >
+            Connecting
+            <span class="text-primary_color underline">talent</span> to <br />
+            opportunity through
+            <span class="text-primary_color underline">skills</span>
+          </h1>
+          <p class="text-white text-center text-[16px] py-3 md:text-[20px]">
+            We forster a skill-focussed environment enabling students to
+            navigate their career with <br />
+            their self-paced learning journey and businesses to gain
+            market-ready talent.
+          </p>
+          <button
+            class="btn mx-auto block bg-white rounded-full text-primary_color mt-5"
+          >
+            Ask questions
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- main  -->
+    <main>
+      <section class="bg-[#979797] py-5">
+        <!-- we empower section  -->
+        <div class="grid place-content-center">
+          <div
+            class="container grid place-content-center gap-4 md:grid-cols-2 lg:grid-cols-4"
+          >
+            <div
+              class="w-auto bg-transparent text-black gird place-content-center"
+            >
+              <h1 class="text-[30px] md:text-[40px] font-bold">
+                At
+                <span class="text-primary_color underline underline-offset-4"
+                  >C4U</span
+                >, <br />
+                We Empower:
+              </h1>
+            </div>
+            <div class="empower-card">
+              <div class="bg-white inline-block p-2 rounded-full">
+                <img src="./images/student.png" alt="" />
+              </div>
+              <h4 class="font-bold text-[18px]">Students</h4>
+              <p class="text-[14px] pt-3">
+                We help students find their way in a fast-evolving world by
+                creating a personalised learning journey guaranteed to help
+                stand out in a crowded job market.
+              </p>
+            </div>
+            <div class="empower-card">
+              <div class="bg-white inline-block p-2 rounded-full">
+                <img src="./images/university.png" alt="" />
+              </div>
+              <h4 class="font-bold text-[18px]">Students</h4>
+              <p class="text-[14px] pt-3">
+                We help students find their way in a fast-evolving world by
+                creating a personalised learning journey guaranteed to help
+                stand out in a crowded job market.
+              </p>
+            </div>
+            <div class="empower-card">
+              <div class="bg-white inline-block p-2 rounded-full">
+                <img src="./images/buisness.png" alt="" />
+              </div>
+              <h4 class="font-bold text-[18px]">Students</h4>
+              <p class="text-[14px] pt-3">
+                We help students find their way in a fast-evolving world by
+                creating a personalised learning journey guaranteed to help
+                stand out in a crowded job market.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- our mission and vission section  -->
+        <div
+          class="container md:flex justify-around mt-5 md:mt-[6rem] items-center gap-5 md:gap-10"
+        >
+          <div>
+            <h3 class="uppercase text-[14px] text-primary_color">about us</h3>
+            <h2 class="text-[25px] md:[36px] font-semibold">Our Mission</h2>
+            <p class="pt-3 md:pt-5 pb-5 md:mb-[70px] md:py-10">
+              To create a personalised pathway for continuous <br />
+              learning and transferrable skills development.
+            </p>
+            <button
+              class="py-1 px-4 text-primary_color hover:scale-105 transition-all border-2 rounded-full border-primary_color"
+            >
+              Find out more
+            </button>
+          </div>
+          <div>
+            <img src="./images/Group 238902.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="container md:flex justify-around items-center mt-5 md:mt-[60px] gap-5 md:gap-10"
+        >
+          <div class="relative">
+            <img src="./images/Right.png" alt="" />
+          </div>
+          <div>
+            <h3 class="uppercase text-[14px] text-primary_color">about us</h3>
+            <h2 class="text-[25px] md:[36px] font-semibold">Our Vision</h2>
+            <p class="pt-3 md:pt-5 pb-5 md:mb-[70px] md:py-10">
+              To have a globally recognised strategic bridge <br />
+              between education and the job market
+            </p>
+            <button
+              class="py-1 px-4 hover:scale-105 transition-all border-2 rounded-full border-primary_color text-primary_color"
+            >
+              Contact us
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="container py-10 flex gap-4 flex-col md:flex-row items-center justify-around">
+          <div class="py-5 px-3 relative max-w-[293px]">
+            <img src="./images/discover.png" alt="">
+            <h3 class="text-[24px] font-bold py-4">Discover</h3>
+            <p class="text-[14px] font-medium mt-2 pr-5">We uncover students unique skills to stand  out in a crowded job market</p>
+            <h5 class="text-[150px] font-extrabold text-red-100 absolute top-0 right-3 -z-10">1</h5>
+          </div>
+          <div class="py-5 px-3 relative max-w-[293px]">
+            <img src="./images/interract.png" alt="">
+            <h3 class="text-[24px] font-bold py-4">Interact</h3>
+            <p class="text-[14px] font-medium mt-2 break-words">We open doors to new opportunities by expanding your transferrable skills</p>
+            <h5 class="text-[150px] font-extrabold text-red-100 absolute top-0 right-3 -z-10">2</h5>
+          </div>
+          <div class="py-5 px-3 relative max-w-[293px]">
+            <img src="./images/engage.png" alt="">
+            <h3 class="text-[24px] font-bold py-4">Engage</h3>
+            <p class="text-[14px] font-medium mt-2">To forester a skill focussed environment that enable students to navigate their ideal career</p>
+            <h5 class="text-[150px] font-extrabold text-red-100 absolute top-0 right-3 -z-10">3</h5>
+          </div>
+        </div>
+      </section>
+      <!-- creative team section  -->
+        <section class="bg-gradient-to-t from-white to-red-100 py-10">
+        <div class="container">
+          <div class="max-w-[420px] relative">
+            <h1 class="text-[30px] md:text-[35] lg:text-[40px] font-semibold ">The Creative Team behind <span class="text-primary_color">the door</span> <img class="absolute right-0" src="./images/gg.png" alt=""></h1>
+          </div>
+          <!-- cards  -->
+          <div class="cards mt-[6rem] grid place-content-center gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div class="card px-10 cursor-pointer border border-white hover:border-primary_color hover:shadow-xl bg-white py-5 rounded-md grid place-content-center">
+              <div>
+                <img class="hover:scale-105 transition" src="./images/Ekta Mahajan.png" alt="">
+              </div>
+              <h2 class="text-center text-[24px] font-bold">Ekta Mahajan</h2>
+              <small class="text-center">Founder & C.E.O</small>
+              <div class="flex gap-2 mt-4 justify-center items-center">
+                <img src="./images/call.png">
+                <img src="./images/message.png">
+                <img src="./images/linkedIn.png">
+              </div>
+            </div>
+            <div class="card px-10 cursor-pointer border border-white hover:border-primary_color hover:shadow-xl bg-white py-5 rounded-md grid place-content-center">
+              <div>
+                <img src="./images/Ekta Mahajan.png" alt="">
+              </div>
+              <h2 class="text-center text-[24px] font-bold">Ekta Mahajan</h2>
+              <small class="text-center">Founder & C.E.O</small>
+              <div class="flex gap-2 mt-4 justify-center items-center">
+                <img src="./images/call.png">
+                <img src="./images/message.png">
+                <img src="./images/linkedIn.png">
+              </div>
+            </div>
+            <div class="card px-10 cursor-pointer border border-white hover:border-primary_color hover:shadow-xl bg-white py-5 rounded-md grid place-content-center">
+              <div>
+                <img src="./images/Ekta Mahajan.png" alt="">
+              </div>
+              <h2 class="text-center text-[24px] font-bold">Ekta Mahajan</h2>
+              <small class="text-center">Founder & C.E.O</small>
+              <div class="flex gap-2 mt-4 justify-center items-center">
+                <img src="./images/call.png">
+                <img src="./images/message.png">
+                <img src="./images/linkedIn.png">
+              </div>
+            </div>
+            <div class="card px-10 cursor-pointer border border-white hover:border-primary_color hover:shadow-xl bg-white py-5 rounded-md grid place-content-center">
+              <div>
+                <img src="./images/Ekta Mahajan.png" alt="">
+              </div>
+              <h2 class="text-center text-[24px] font-bold">Ekta Mahajan</h2>
+              <small class="text-center">Founder & C.E.O</small>
+              <div class="flex gap-2 mt-4 justify-center items-center">
+                <img src="./images/call.png">
+                <img src="./images/message.png">
+                <img src="./images/linkedIn.png">
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-white py-4 md:py-8 dark:bg-dark">
+      <div class="container flex justify-between gap-5 lg:gap-7 flex-wrap px-3">
+        <div>
+          <img src="./images/logo.png" alt="" />
+          <ul class="mt-5">
+            <li class="text-p-text">Level39</li>
+            <li class="text-p-text">One Canda Square</li>
+            <li class="text-p-text">Cnary wharf</li>
+            <li class="text-p-text">London</li>
+            <li class="text-p-text">E145AB</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-btn-text font-bold">Home</h1>
+          <ul class="mt-5">
+            <li class="text-p-text">Home</li>
+            <li class="text-p-text">Collaboration</li>
+            <li class="text-p-text">Staticics</li>
+            <li class="text-p-text">How It Works</li>
+            <li class="text-p-text">Testimonial</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-btn-text font-bold">About Us</h1>
+          <ul class="mt-5">
+            <li class="text-p-text">Home</li>
+            <li class="text-p-text">Collaboration</li>
+            <li class="text-p-text">Staticics</li>
+            <li class="text-p-text">How It Works</li>
+            <li class="text-p-text">Testimonial</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-btn-text font-bold">Upskill</h1>
+          <ul class="mt-5">
+            <li class="text-p-text">Home</li>
+            <li class="text-p-text">Collaboration</li>
+            <li class="text-p-text">Staticics</li>
+            <li class="text-p-text">How It Works</li>
+            <li class="text-p-text">Testimonial</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-btn-text font-bold">Contact Us</h1>
+          <ul class="mt-5">
+            <li class="text-p-text">Home</li>
+            <li class="text-p-text">Collaboration</li>
+            <li class="text-p-text">Staticics</li>
+            <li class="text-p-text">How It Works</li>
+            <li class="text-p-text">Testimonial</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container text-center pt-5 pb-2 text-[14px]">
+        Copyright 2022 Creatives For You LTD
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
